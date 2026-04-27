@@ -4,9 +4,9 @@ import openai
 from pinecone import Pinecone
 import os
 
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-pc = Pinecone(api_key=os.getenv("https://real-estate-y1lrj3c.svc.aped-4627-b74a.pinecone.io"))
+pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 index = pc.Index("real-estate")
 
 app = FastAPI()
