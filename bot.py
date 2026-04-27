@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTyp
 from search import search
 import os
 
-BOT_TOKEN = os.getenv("8398384784:AAHpLG78jXyTmnvk0JYvcWQVeYKZ1uJn3_o")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
