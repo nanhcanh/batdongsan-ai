@@ -1,5 +1,5 @@
 openai
-pinecone-client
+pinecone
 fastapi
 uvicorn
 python-telegram-bot
